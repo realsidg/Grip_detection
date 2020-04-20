@@ -92,5 +92,7 @@ python -u -W  ignore train.py --epochs 200 --checkpoint_interval 5 --batch_size 
 
 ### References
 [pytorch darknet training](https://github.com/cfotache/pytorch_custom_yolo_training)
+
 [pytorch darknet testing](https://github.com/cfotache/pytorch_objectdetecttrack)
+
 [Open Images Download Kit](https://github.com/EscVM/OIDv4_ToolKit)
