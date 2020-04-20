@@ -89,3 +89,8 @@ python -u -W  ignore train.py --epochs 200 --checkpoint_interval 5 --batch_size 
 1. Put images to detect inside testing/toDetect/ directory _(Some images giving good output already present)_
 1. run test.py
 1. your predictions will be saved under prections/
+
+### References
+[pytorch darknet training](https://github.com/cfotache/pytorch_custom_yolo_training)
+[pytorch darknet testing](https://github.com/cfotache/pytorch_objectdetecttrack)
+[Open Images Download Kit](https://github.com/EscVM/OIDv4_ToolKit)
