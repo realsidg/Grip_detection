@@ -17,27 +17,27 @@ Trigger Grip | Handgun, Hair Dryer
 
 ### Training
 
-1. Copy create_list_images.py inside data/python create_list_images.py && mv list.txt ../train.txt 
+* Copy create_list_images.py inside data/python create_list_images.py && mv list.txt ../train.txt 
 
-1. Inside train/ run the following command to create list of absolute file paths
+* Inside train/ run the following command to create list of absolute file paths
 ```bash
 python create_list_images.py && mv list.txt ../train.txt 
 ```
 
-1. Repeat same for validation/
+* Repeat same for validation/
 ```bash
 python create_list_images.py && mv list.txt ../val.txt 
 ```
 
-1. Edit training/config/coco.data and set train and val path as path of the created text files under data
+* Edit training/config/coco.data and set train and val path as path of the created text files under data
 
-1. Install the environment.yml file
+* Install the environment.yml file
 
 ```bash
 conda env create -f environment.yml
 ```
 
-1. Run train.py under training -
+* Run train.py under training -
 
 usage: train.py [-h] [--epochs EPOCHS] [--image_folder IMAGE_FOLDER]
                 [--batch_size BATCH_SIZE]
@@ -77,8 +77,15 @@ optional arguments:
   --use_cuda USE_CUDA   whether to use cuda if available
   
   
-Example command to ignore depreciation warnings, savinf errors in error.txt and log in log.txt
+* Example command to ignore depreciation warnings, savinf errors in error.txt and log in log.txt
 ```bash
-python -u -W  ignore train.py --epochs 200 --checkpoint_interval 5 --batch_size 4 --weights_path config/yolov3.weights --n_cpu 4 2>error.txt | tee log1.txt
+python -u -W  ignore train.py --epochs 200 --checkpoint_interval 5 --batch_size 4 --weights_path config/yolov3.weights --n_cpu 4 2>error.txt | tee log1.txt 
 ```
-1. Your weights after each checkpoint will be stored under checkpoints/
+
+* Your weights after each checkpoint will be stored under checkpoints/
+
+### Testing
+```python test.py```
+1. Put images to detect inside testing/toDetect/ directory _(Some images giving good output already present)_
+1. run test.py
+1. your predictions will be saved under prections/
