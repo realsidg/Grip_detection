@@ -1,0 +1,6 @@
+classes=5
+train=../Dataset2/train.txt
+valid=../Dataset2/val.txt
+names=../Dataset2/classes.txt
+backup=backup/
+

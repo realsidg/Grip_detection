@@ -1,0 +1,26 @@
+<annotation>
+	<folder>keys</folder>
+	<filename>card1 (27).jpeg</filename>
+	<path>/mnt/dev/Symbionic/D1/keys/card1 (27).jpeg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>300</width>
+		<height>168</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Key Grip</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>14</xmin>
+			<ymin>9</ymin>
+			<xmax>287</xmax>
+			<ymax>162</ymax>
+		</bndbox>
+	</object>
+</annotation>
